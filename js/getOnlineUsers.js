@@ -27,8 +27,9 @@ function get_online_users() {
             var email_fetched = online_users[i]['email'];
             var institute = online_users[i]['institute'];
             var role = online_users[i]['role'];
+            localStorage.setItem('current_user_name', name);
             if (email === email_fetched) {
-                document.getElementById('usernamespan').innerText = name;
+                document.getElementById('usernamespan').innerText = "Welcome back, " + name;
             } else {
                 var newdiv1 = `
                 <div class="col-xl-3 col-md-6 mb-4">
@@ -54,9 +55,6 @@ function get_online_users() {
                 content += newdiv1;
             }
         }
-        $('#parentOnlineUserDiv').html(content);
-
-        document.getElementById('usernamespan').innerText = "Welcome back, " + name;
     })
 }
     //     var resp = request_server(URL_3 + 'user/home', {}, "GET");
