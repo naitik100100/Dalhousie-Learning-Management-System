@@ -14,6 +14,7 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <script src="js/logout.js"></script>
+  <script src="js/cluster.js"></script>
 
 </head>
 
@@ -109,43 +110,11 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
           <!-- Page Heading -->
           <h1 class="h3 mb-2 text-gray-800">Clusters</h1>
           <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Cluster 1</th>
-                      <th>Cluster 2</th>
-                      <th>Cluster 3</th>
-                    </tr>
-                  </thead>
-                  <tbody id="parentTableDiv">
-                    <tr>
-                      <td>File1.txt</td>
-                      <td>File2.txt</td>
-                      <td>File3.txt</td>
-                    </tr>
-                    <tr>
-                      <td>File4.txt</td>
-                      <td>File5.txt</td>
-                      <td>File6.txt</td>
-                    </tr>
-                    <tr>
-                      <td>File7.txt</td>
-                      <td>File8.txt</td>
-                      <td>File9.txt</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+          <button onclick="getCluster();" class="btn btn-success">Show the clusters</button>
+          <div id="dummytablediv"></div>
         </div>
         <!-- /.container-fluid -->
 
@@ -205,6 +174,7 @@
   <script>
     var name = localStorage.getItem('current_user_name')
     document.getElementById('usernamespan').innerText = "Welcome back, " + name;
+
   </script>
 </body>
 
