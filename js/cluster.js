@@ -13,19 +13,19 @@ function getCluster() {
                         </thead>
                         <tbody >
                             <tr>
-                                <td>aditya.txt</td>
-                                <td>monil.txt</td>
-                                <td>naitik.txt</td>
+                                <td>Aditya_assignment_1.txt</td>
+                                <td>Monil_assignment_01.txt</td>
+                                <td>Naitik_assignment_1.txt</td>
                             </tr>
                             <tr>
-                                <td>aditya_2.txt</td>
-                                <td>monil_2.txt</td>
-                                <td>naitik_2.txt</td>
+                                <td>Aditya_assignment_2.txt</td>
+                                <td>Monil_lab_assignment_1.txt</td>
+                                <td>Monil_Project_Specification.txt</td>
                             </tr>
                             <tr>
-                                <td>aditya_3.txt</td>
-                                <td>monil_3.txt</td>
-                                <td>naitik_3.txt</td>
+                                <td>Anshdeep_assignment_1.txt</td>
+                                <td>Monil_assignment_5.txt</td>
+                                <td>Naitik_assignment_5.txt</td>
                             </tr>
                         </tbody>
                     </table>
